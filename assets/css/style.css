@@ -414,6 +414,11 @@ body::after {
     box-shadow: 0 0 0 6px white, 0 0 0 8px var(--main-a20), var(--shadow-soft);
     transition: transform 0.5s var(--ease-spring);
 }
+.feature-card__icon img {
+    width: 82%; height: 82%;
+    object-fit: contain;
+    display: block;
+}
 .feature-card:hover .feature-card__icon { transform: scale(1.08); box-shadow: 0 0 0 6px white, 0 0 0 8px var(--main-teal), var(--shadow-soft); }
 .feature-card__title {
     font-size: 17px; font-weight: 700;
