@@ -329,15 +329,12 @@ body::after {
     animation: heroReveal 1s var(--ease-out-expo) 0.5s forwards;
 }
 .hero__illustration { position: relative; width: 100%; }
-.hero__illustration svg,
-.hero__illustration img {
+.hero__illustration svg {
     width: 100%; height: auto;
     border-radius: var(--radius-round);
     box-shadow: var(--shadow-dreamy);
     display: block;
-    background: white;
 }
-.hero__illustration img { aspect-ratio: 5 / 4; object-fit: cover; }
 .hero__visual-actions {
     margin-top: 24px;
     display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
@@ -452,7 +449,6 @@ body::after {
     box-shadow: var(--shadow-dreamy);
 }
 .message__image svg { width: 100%; height: auto; display: block; }
-.message__image img { width: 100%; height: auto; display: block; background: white; aspect-ratio: 5 / 4; object-fit: cover; }
 .message__content { position: relative; }
 .message__quote {
     display: inline-flex; align-items: center; gap: 10px;
@@ -902,15 +898,6 @@ body::after {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.8);
     transform: translateY(-2px);
-}
-.cta__illust {
-    width: 190px; margin: 0 auto 24px;
-}
-.cta__illust img {
-    width: 100%; height: auto; display: block;
-    background: white;
-    border-radius: 24px;
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
 }
 .cta__phone { color: white; display: inline-block; text-align: left; }
 .cta__phone-label { font-size: 13px; opacity: 0.85; margin-bottom: 8px; letter-spacing: 0.04em; }
