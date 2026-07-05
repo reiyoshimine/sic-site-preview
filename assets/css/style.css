@@ -1094,3 +1094,70 @@ body::after {
     color: var(--text-main);
     letter-spacing: 0.04em;
 }
+
+/* --------------------------------------------------------------------------
+   Responsive - Mobile 調整（表示崩れ対策・視認性）
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    /* ヘッダー: 1行に収める（英字とバッジは非表示、ロゴを縮小） */
+    .header { padding: 8px 16px; }
+    .header--scrolled { padding: 6px 16px; }
+    .header__logo { gap: 8px; min-width: 0; }
+    .header__logo-icon { width: 36px; height: 36px; }
+    .header__logo-text { font-size: 13px; line-height: 1.4; white-space: nowrap; }
+    .header__logo-text small { display: none; }
+
+    /* ヒーロー: バッジ→統計カードを縦に整列 */
+    .hero__stats-wrap--lead { flex-direction: column; align-items: center; gap: 14px; width: 100%; }
+    .hero__stats {
+        width: 100%; max-width: 340px;
+        justify-content: space-around; gap: 10px;
+        padding: 14px 12px;
+    }
+    .hero__stat-value { font-size: 17px; }
+    .hero__stat-label { font-size: 10px; }
+    .hero__badge { font-size: 15px; padding: 8px 20px; }
+    .hero__title { font-size: 29px; line-height: 1.65; }
+    .hero__catch { font-size: 11px; letter-spacing: 0.26em; }
+    .hero__notes { justify-content: center; }
+    .hero__note { font-size: 11px; padding: 4px 12px; }
+
+    /* ヒーローのボタン類: 縦に揃えて中央寄せ */
+    .hero__visual-actions { flex-direction: column; align-items: center; gap: 12px; }
+    .hero__opening { justify-content: center; width: 100%; max-width: 320px; }
+    .hero__buttons { flex-direction: column; align-items: center; gap: 12px; width: 100%; }
+    .hero__btn { width: 100%; max-width: 320px; justify-content: center; }
+
+    /* 見出し・ラベル */
+    .section-header { margin-bottom: 44px; }
+    .section-header__label { font-size: 11px; letter-spacing: 0.26em; }
+    .page-header { padding: 48px 20px 40px; }
+    .page-header__title { font-size: 26px; }
+
+    /* カード類の余白 */
+    .feature-card { padding: 32px 22px; }
+    .partner-card { padding: 30px 22px; }
+    .medical-list__category { padding: 28px 22px; }
+
+    /* 医師紹介 */
+    .doctor-profile__name { font-size: 20px; }
+    .profile-card { padding: 28px 20px; }
+    .profile-card__row { flex-direction: column; gap: 6px; padding: 16px 0; }
+    .profile-card__row dt { width: auto; }
+
+    /* FAQ */
+    .faq-item__question { padding: 18px 20px; font-size: 14px; }
+    .faq-item__answer { padding: 0 20px; }
+    .faq-item.is-open .faq-item__answer { padding: 0 20px 20px; }
+
+    /* CTA: ボタンを縦に */
+    .cta__buttons { flex-direction: column; align-items: center; gap: 12px; }
+    .cta__btn { width: 100%; max-width: 320px; text-align: center; }
+    .cta__phone { text-align: center; }
+    .cta__phone-term { width: auto; min-width: 0; margin-right: 10px; font-size: 15px; }
+    .cta__phone-number, .cta__phone-fax { justify-content: center; }
+
+    /* メッセージ・お知らせ */
+    .message__quote { font-size: 11px; letter-spacing: 0.26em; }
+    .news__list { border-radius: 20px; }
+}
