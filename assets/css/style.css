@@ -709,7 +709,7 @@ body::after {
     align-items: start;
 }
 .doctor-profile__image-placeholder {
-    width: 100%; aspect-ratio: 3/4;
+    width: 100%; aspect-ratio: 4/5;
     background: linear-gradient(160deg, var(--main-teal-soft) 0%, var(--main-teal) 50%, var(--main-teal-deep) 100%);
     border-radius: var(--radius-round);
     display: flex; align-items: center; justify-content: center;
@@ -717,6 +717,12 @@ body::after {
     font-size: 14px; font-weight: 700;
     position: relative; overflow: hidden;
     box-shadow: var(--shadow-dreamy);
+}
+.doctor-profile__image-placeholder img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative; z-index: 1;
 }
 .doctor-profile__image-placeholder::before {
     content: ''; position: absolute;
