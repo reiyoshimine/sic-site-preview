@@ -79,96 +79,93 @@
         <div class="message__visual fade-in">
             <div class="message__image">
                 <!-- 診療風景のイラスト -->
-                <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ご自宅での診療イメージ">
-                    <rect width="500" height="350" fill="#F8F3E8"/>
-                    <!-- 天井の梁 -->
-                    <rect width="500" height="12" fill="#E3D5BC"/>
-                    <!-- ペンダントライト -->
-                    <line x1="250" y1="12" x2="250" y2="52" stroke="#C9B896" stroke-width="3"/>
-                    <ellipse cx="250" cy="66" rx="34" ry="18" fill="#F6E8C8"/>
-                    <ellipse cx="250" cy="72" rx="34" ry="8" fill="#EFDBAF"/>
-                    <circle cx="250" cy="86" r="6" fill="#F9E9C4"/>
-                    <!-- 窓 -->
-                    <rect x="36" y="48" width="168" height="158" rx="10" fill="#EDF6F1" stroke="#DCCFB6" stroke-width="7"/>
-                    <line x1="92" y1="52" x2="92" y2="202" stroke="#DCCFB6" stroke-width="5"/>
-                    <line x1="148" y1="52" x2="148" y2="202" stroke="#DCCFB6" stroke-width="5"/>
-                    <line x1="40" y1="100" x2="200" y2="100" stroke="#DCCFB6" stroke-width="5"/>
-                    <line x1="40" y1="152" x2="200" y2="152" stroke="#DCCFB6" stroke-width="5"/>
-                    <!-- 窓からの光 -->
-                    <path d="M60 60 L200 350 L340 350 L120 48 Z" fill="#FFFFFF" opacity="0.22"/>
-                    <!-- 壁かけ（タペストリー） -->
-                    <line x1="428" y1="34" x2="428" y2="52" stroke="#C9B896" stroke-width="3"/>
-                    <rect x="404" y="52" width="48" height="96" rx="4" fill="#F2F8F4" stroke="#DCCFB6" stroke-width="4"/>
-                    <circle cx="428" cy="82" r="11" fill="#F7D9A0"/>
-                    <path d="M428 100 q-8 14 -2 26 M428 100 q8 12 3 26" stroke="#9CC7A8" stroke-width="3" fill="none" stroke-linecap="round"/>
-                    <!-- 床 -->
-                    <rect y="252" width="500" height="98" fill="#EFE5D0"/>
-                    <rect y="248" width="500" height="7" rx="3.5" fill="#E3D5BC"/>
-                    <ellipse cx="250" cy="330" rx="180" ry="30" fill="#EADFC8"/>
-                    <!-- ソファ（右） -->
-                    <g>
-                        <rect x="308" y="176" width="168" height="76" rx="16" fill="#F7F0E0"/>
-                        <rect x="296" y="196" width="26" height="72" rx="12" fill="#F2E9D5"/>
-                        <rect x="462" y="196" width="26" height="72" rx="12" fill="#F2E9D5"/>
-                        <rect x="308" y="240" width="168" height="30" rx="12" fill="#F2E9D5"/>
-                        <rect x="316" y="268" width="10" height="16" rx="4" fill="#C9A16B"/>
-                        <rect x="458" y="268" width="10" height="16" rx="4" fill="#C9A16B"/>
+                <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ご自宅へお伺いする訪問診療のイメージ">
+                    <defs>
+                        <linearGradient id="mcSky" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0" stop-color="#DFF1EC"/>
+                            <stop offset="0.55" stop-color="#F6FAF5"/>
+                            <stop offset="1" stop-color="#FBF5E6"/>
+                        </linearGradient>
+                        <pattern id="mcDots" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <circle cx="3" cy="3" r="1.6" fill="#85C4BD" opacity="0.13"/>
+                        </pattern>
+                    </defs>
+                    <rect width="500" height="350" fill="url(#mcSky)"/>
+                    <rect width="500" height="180" fill="url(#mcDots)"/>
+                    <!-- おだやかな太陽 -->
+                    <circle cx="82" cy="66" r="46" fill="#F9E4B8" opacity="0.45"/>
+                    <circle cx="82" cy="66" r="32" fill="#F7D9A0"/>
+                    <circle cx="77" cy="60" r="24" fill="#FAE3B4" opacity="0.7"/>
+                    <path d="M70 64 q3.5 3.5 7 0" stroke="#C99A55" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+                    <path d="M88 64 q3.5 3.5 7 0" stroke="#C99A55" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+                    <path d="M76 75 q6 5 12 0" stroke="#C99A55" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+                    <circle cx="66" cy="73" r="4" fill="#F2BC90" opacity="0.65"/>
+                    <circle cx="98" cy="73" r="4" fill="#F2BC90" opacity="0.65"/>
+                    <!-- 雲 -->
+                    <g fill="#FFFFFF" opacity="0.9">
+                        <ellipse cx="215" cy="52" rx="44" ry="16"/>
+                        <ellipse cx="248" cy="42" rx="28" ry="12"/>
+                        <ellipse cx="404" cy="46" rx="34" ry="13"/>
+                        <ellipse cx="330" cy="88" rx="24" ry="9" opacity="0.7"/>
                     </g>
-                    <!-- おばあさん -->
+                    <!-- 丘 -->
+                    <path d="M-10 225 Q120 180 250 210 T510 198 L510 350 L-10 350 Z" fill="#DCEDE3"/>
+                    <path d="M-10 272 Q160 242 330 262 T510 255 L510 350 L-10 350 Z" fill="#F9F1DC"/>
+                    <!-- 小道（家の玄関へ） -->
+                    <path d="M70 350 C150 316 236 300 296 274 C316 266 322 258 328 248 L346 252 C338 264 332 274 314 282 C258 306 190 330 150 350 Z" fill="#F0DFBB"/>
+                    <!-- 家 -->
                     <g>
-                        <circle cx="360" cy="164" r="21" fill="#F3D6B8"/>
-                        <path d="M340 158 a21 21 0 0 1 40 0 q-4 -13 -20 -13 q-16 0 -20 13z" fill="#CFCFCF"/>
-                        <circle cx="360" cy="139" r="8" fill="#CFCFCF"/>
-                        <path d="M352 162 q3 3 6 0" stroke="#6B5844" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-                        <path d="M364 162 q3 3 6 0" stroke="#6B5844" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-                        <path d="M355 172 q5 4 10 0" stroke="#D89090" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-                        <circle cx="348" cy="169" r="3.5" fill="#F2BC90" opacity="0.6"/>
-                        <circle cx="372" cy="169" r="3.5" fill="#F2BC90" opacity="0.6"/>
-                        <path d="M338 226 q0 -42 22 -42 q22 0 22 42 l0 14 l-44 0 z" fill="#E9C9C2"/>
-                        <path d="M336 240 h50 q6 0 6 8 l0 6 h-62 l0 -6 q0 -8 6 -8z" fill="#F3E3C2"/>
+                        <rect x="302" y="205" width="120" height="85" rx="8" fill="#FFFDF8"/>
+                        <path d="M289 208 L362 150 L435 208 Z" fill="#85C4BD"/>
+                        <rect x="402" y="166" width="15" height="28" rx="3.5" fill="#E8927C"/>
+                        <rect x="348" y="240" width="26" height="50" rx="5" fill="#5FA69E"/>
+                        <circle cx="369" cy="266" r="2.5" fill="#F3FAF8"/>
+                        <rect x="316" y="222" width="21" height="21" rx="4" fill="#CFE6E0"/>
+                        <rect x="388" y="222" width="21" height="21" rx="4" fill="#CFE6E0"/>
                     </g>
-                    <!-- ご家族 -->
+                    <!-- 屋根の上のハート -->
+                    <path d="M362 122 c-5-6-14-3.5-14 3.5 c0 6 7.5 10.5 14 15 c6.5-4.5 14-9 14-15 c0-7-9-9.5-14-3.5z" fill="#F2B5A5"/>
+                    <!-- 出迎えるおばあさん（玄関先） -->
                     <g>
-                        <circle cx="432" cy="172" r="19" fill="#F3D6B8"/>
-                        <path d="M414 168 a19 19 0 0 1 37 0 l-4 -8 q-14 -8 -29 0 z" fill="#6B5844"/>
-                        <path d="M425 170 q3 3 6 0" stroke="#6B5844" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-                        <path d="M437 170 q3 3 6 0" stroke="#6B5844" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-                        <path d="M428 180 q4 3.5 9 0" stroke="#D89090" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-                        <path d="M412 232 q0 -38 20 -38 q20 0 20 38 l0 8 l-40 0 z" fill="#E6C687"/>
-                        <ellipse cx="432" cy="230" rx="9" ry="6" fill="#F3D6B8"/>
-                        <rect x="425" y="218" width="14" height="12" rx="4" fill="#B9D8BC"/>
+                        <circle cx="336" cy="228" r="10" fill="#F3D6B8"/>
+                        <path d="M326 226 a10 10 0 0 1 20 0 q-3 -7 -10 -7 q-7 0 -10 7z" fill="#CFCFCF"/>
+                        <circle cx="336" cy="216" r="4" fill="#CFCFCF"/>
+                        <path d="M327 268 q0 -30 9 -30 q9 0 9 30 l0 22 l-18 0 z" fill="#E9C9C2"/>
+                        <path d="M344 244 q8 -6 10 -14" stroke="#E9C9C2" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        <circle cx="355" cy="228" r="4" fill="#F3D6B8"/>
                     </g>
-                    <!-- 医師（ひざをついて診察） -->
+                    <!-- 訪問する医師（小道の上） -->
                     <g>
-                        <circle cx="234" cy="176" r="22" fill="#F3D6B8"/>
-                        <path d="M214 170 a22 22 0 0 1 42 0 l-5 -9 q-16 -9 -32 0 z" fill="#4A4038"/>
-                        <path d="M226 174 q3.5 3.5 7 0" stroke="#6B5844" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-                        <path d="M240 174 q3.5 3.5 7 0" stroke="#6B5844" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-                        <path d="M229 186 q5.5 4.5 11 0" stroke="#D89090" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-                        <circle cx="222" cy="182" r="3.5" fill="#F2BC90" opacity="0.6"/>
-                        <circle cx="248" cy="182" r="3.5" fill="#F2BC90" opacity="0.6"/>
-                        <path d="M210 262 q0 -60 24 -60 q24 0 24 60 l0 28 l-48 0 z" fill="#FDFCF8" stroke="#E0E9E5" stroke-width="2.5"/>
-                        <path d="M224 204 l10 11 l10 -11" fill="none" stroke="#85C4BD" stroke-width="3" stroke-linecap="round"/>
-                        <path d="M226 206 q-11 22 3 34" stroke="#7A8683" stroke-width="3" fill="none" stroke-linecap="round"/>
-                        <circle cx="231" cy="242" r="5.5" fill="#5FA69E"/>
-                        <path d="M252 216 q26 8 44 6" stroke="#FDFCF8" stroke-width="11" fill="none" stroke-linecap="round"/>
-                        <circle cx="300" cy="223" r="7" fill="#F3D6B8"/>
-                        <rect x="200" y="286" width="68" height="10" rx="5" fill="#E8DCC4"/>
+                        <circle cx="252" cy="252" r="11" fill="#F3D6B8"/>
+                        <path d="M241 249 a11 11 0 0 1 22 0 l-3 -5 q-8 -5 -16 0 z" fill="#4A4038"/>
+                        <path d="M242 288 q0 -26 10 -26 q10 0 10 26 l0 24 l-20 0 z" fill="#FDFCF8"/>
+                        <path d="M247 266 l5 6 l5 -6" fill="none" stroke="#85C4BD" stroke-width="2" stroke-linecap="round"/>
+                        <rect x="263" y="290" width="16" height="13" rx="4" fill="#E8927C"/>
+                        <path d="M267 290 v-3 a4 4 0 0 1 8 0 v3" fill="none" stroke="#E8927C" stroke-width="2"/>
+                        <path d="M269 296 h4.5 m-2.25 -2.25 v4.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
                     </g>
-                    <!-- 往診かばん -->
-                    <rect x="158" y="266" width="34" height="24" rx="6" fill="#E8927C"/>
-                    <path d="M168 266 v-5 a7 7 0 0 1 14 0 v5" fill="none" stroke="#E8927C" stroke-width="3"/>
-                    <path d="M171 278 h8 m-4 -4 v8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
-                    <!-- 観葉植物 -->
+                    <!-- ふたりの間のハート -->
+                    <path d="M298 226 c-4-4.5-11-3-11 3 c0 5 6 8.5 11 12 c5-3.5 11-7 11-12 c0-6-7-7.5-11-3z" fill="#F2B5A5"/>
+                    <path d="M283 206 c-3-3.5-8-2-8 2.5 c0 3.5 4.5 6 8 8.5 c3.5-2.5 8-5 8-8.5 c0-4.5-5-6-8-2.5z" fill="#F7D9A0"/>
+                    <!-- 木 -->
                     <g>
-                        <path d="M62 252 q-3 -34 14 -48 M62 252 q3 -28 -10 -42 M62 252 q0 -22 1 -34" stroke="#8FBF9F" stroke-width="4" fill="none" stroke-linecap="round"/>
-                        <circle cx="78" cy="200" r="7" fill="#B9D8BC"/>
-                        <circle cx="50" cy="206" r="6" fill="#B9D8BC"/>
-                        <path d="M48 252 h30 l-4 28 h-22 z" fill="#85C4BD"/>
+                        <rect x="96" y="238" width="8" height="28" rx="4" fill="#C9A16B"/>
+                        <circle cx="100" cy="222" r="22" fill="#9CC7A8"/>
+                        <circle cx="84" cy="234" r="14" fill="#B9D8BC"/>
+                        <circle cx="116" cy="234" r="13" fill="#8FBF9F"/>
                     </g>
-                    <!-- ハート -->
-                    <path d="M292 148 c-4.5-5.5-13-3.5-13 3.5 c0 6 7 10 13 14 c6-4 13-8 13-14 c0-7-8.5-9-13-3.5z" fill="#F2B5A5"/>
-                    <path d="M318 128 c-3-3.5-8.5-2-8.5 2.5 c0 4 4.5 6.5 8.5 9 c4-2.5 8.5-5 8.5-9 c0-4.5-5.5-6-8.5-2.5z" fill="#F7D9A0"/>
+                    <g>
+                        <rect x="462" y="230" width="7" height="24" rx="3.5" fill="#C9A16B"/>
+                        <circle cx="465" cy="216" r="17" fill="#9CC7A8"/>
+                        <circle cx="477" cy="226" r="11" fill="#B9D8BC"/>
+                    </g>
+                    <!-- 前景のしげみ -->
+                    <g fill="#CBE2CE">
+                        <circle cx="16" cy="344" r="34"/>
+                        <circle cx="58" cy="354" r="28"/>
+                        <circle cx="488" cy="342" r="38"/>
+                        <circle cx="440" cy="356" r="28"/>
+                    </g>
                 </svg>
             </div>
         </div>
