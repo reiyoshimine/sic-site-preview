@@ -2,6 +2,15 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PVZB57DKBD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PVZB57DKBD', { 'anonymize_ip': true });
+</script>
+
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="札幌市中央区を中心に訪問診療・在宅医療を行うクリニック。英語対応、精神科・皮膚科顧問医と連携、自立支援医療対応。通院が難しい方はお気軽にご相談ください。">
@@ -31,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/style.css?v=6">
+<link rel="stylesheet" href="assets/css/style.css?v=8">
 </head>
 <body>
     <a class="skip-link" href="#top">本文へスキップ</a>
@@ -76,10 +85,11 @@
                     <li><a href="medical-care.html" class="header__nav-link">診療のご案内</a></li>
                     <li><a href="doctors.html" class="header__nav-link">医師紹介</a></li>
                     <li><a href="faq.html" class="header__nav-link">よくある質問</a></li>
+                    <li><a href="#access" class="header__nav-link">アクセス</a></li>
                 </ul>
             </nav>
 
-            <a href="#contact" class="header__cta">お問い合わせ</a>
+            <a href="contact.html" class="header__cta">お問い合わせ</a>
         </div>
     </header>
 
@@ -319,6 +329,9 @@
                 <p class="news__title"><a href="#">ホームページを開設しました</a></p>
             </div>
         </div>
+        <p style="text-align:center; margin-top:28px;">
+            <a href="blog/" class="message__link">在宅医療コラムを読む <span>&rarr;</span></a>
+        </p>
     </div>
 </section>
 
@@ -351,6 +364,29 @@
 
     </main>
 
+<!-- Access Section -->
+<section class="section section--white" id="access">
+    <div class="section-header">
+        <p class="section-header__label">Access</p>
+        <h2 class="section-header__title">アクセス・医院概要</h2>
+    </div>
+    <div class="access-grid">
+        <table class="info-table">
+            <tr><th>医院名</th><td>札幌インターナショナルクリニック</td></tr>
+            <tr><th>院長</th><td>吉峰 玲</td></tr>
+            <tr><th>所在地</th><td>〒064-0915<br>札幌市中央区南15条西15丁目1-15-402</td></tr>
+            <tr><th>電話</th><td><a href="tel:0112131017">011-213-1017</a></td></tr>
+            <tr><th>FAX</th><td>011-213-1018</td></tr>
+            <tr><th>受付時間</th><td>平日 9:00〜17:00（土日祝除く）<br>※急変時は24時間対応</td></tr>
+            <tr><th>診療内容</th><td>訪問診療・往診（内科ほか）／英語対応可<br>保険医療機関・自立支援医療対応</td></tr>
+            <tr><th>対応エリア</th><td>札幌市中央区を中心に札幌市内全域<br>（近郊もご相談ください)</td></tr>
+        </table>
+        <div class="access-map">
+            <iframe loading="lazy" title="札幌インターナショナルクリニックの地図" src="https://www.google.com/maps?q=%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%8D%9715%E6%9D%A1%E8%A5%BF15%E4%B8%81%E7%9B%AE1-15&z=15&output=embed&hl=ja" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
     <!-- CTA Section -->
     <section class="cta" id="contact">
         <div class="cta__inner">
@@ -382,7 +418,7 @@
     <footer class="footer">
         <div class="footer__wave">
             <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none">
-                <path d="M0,42 C220,12 460,54 760,32 C1040,12 1260,44 1440,22 L1440,0 L0,0 Z" fill="#85C4BD"/>
+                <path d="M0,42 C220,12 460,54 760,32 C1040,12 1260,44 1440,22 L1440,0 L0,0 Z" fill="#4E938B"/>
             </svg>
         </div>
         <div class="footer__inner">
@@ -390,7 +426,7 @@
                 <div class="footer__brand">
                     <div class="footer__brand-icon">
                         <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <circle cx="32" cy="32" r="30" fill="#E6F3F1"/>
+                            <circle cx="32" cy="32" r="30" fill="#FFFFFF"/>
                             <g stroke="#85C4BD" stroke-width="3" stroke-linecap="round">
                                 <line x1="32" y1="3" x2="32" y2="9"/>
                                 <line x1="32" y1="55" x2="32" y2="61"/>
@@ -431,12 +467,15 @@
                     <li><a href="#features">当院の特徴</a></li>
                     <li><a href="doctors.html">医師紹介</a></li>
                     <li><a href="faq.html">よくある質問</a></li>
+                    <li><a href="blog/">在宅医療コラム</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="footer__title">Contact</h4>
                 <ul class="footer__links">
-                    <li><a href="#contact">お問い合わせ</a></li>
+                    <li><a href="contact.html">お問い合わせフォーム</a></li>
+                    <li><a href="#contact">お電話でのご相談</a></li>
+                    <li><a href="#access">アクセス</a></li>
                     <li><a href="privacy.html">プライバシーポリシー</a></li>
                 </ul>
             </div>
