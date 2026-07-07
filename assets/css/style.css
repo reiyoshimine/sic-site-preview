@@ -1313,3 +1313,83 @@ a:focus-visible, button:focus-visible {
     .info-table th { width: 90px; padding: 12px 14px; }
     .info-table td { padding: 12px 14px; }
 }
+
+/* --------------------------------------------------------------------------
+   診療当日の流れ
+   -------------------------------------------------------------------------- */
+.visit-steps {
+    max-width: var(--content-sm);
+    margin: 0 auto;
+    display: grid; gap: 18px;
+}
+.visit-step {
+    display: grid; grid-template-columns: 112px 1fr; gap: 24px;
+    align-items: center;
+    background: white;
+    border: 1px solid var(--main-a6);
+    border-radius: var(--radius-round);
+    box-shadow: var(--shadow-soft);
+    padding: 24px 28px;
+    position: relative;
+}
+.visit-step__art {
+    width: 112px; height: 112px;
+    background: var(--sub-mint);
+    border-radius: 22px;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+}
+.visit-step__art svg { width: 84%; height: 84%; }
+.visit-step__num {
+    position: absolute; top: -10px; left: -10px;
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--main-teal-deep), #4E938B);
+    color: #fff; font-weight: 900; font-size: 16px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 12px rgba(95, 166, 158, 0.4);
+}
+.visit-step__title { font-size: 16.5px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.03em; }
+.visit-step__text { font-size: 14px; color: var(--text-sub); line-height: 1.95; }
+.visit-note {
+    max-width: var(--content-sm);
+    margin: 36px auto 0;
+    background: var(--main-teal-pale);
+    border-radius: 20px;
+    padding: 22px 26px;
+    font-size: 13.5px; color: var(--text-main); line-height: 2;
+}
+.visit-note strong { color: var(--main-teal-text); }
+@media (max-width: 767px) {
+    .visit-step { grid-template-columns: 84px 1fr; gap: 16px; padding: 20px 18px; }
+    .visit-step__art { width: 84px; height: 84px; border-radius: 18px; }
+}
+
+/* --------------------------------------------------------------------------
+   文字サイズ切替
+   -------------------------------------------------------------------------- */
+.font-toggle {
+    border: 1px solid var(--main-a20);
+    background: rgba(255,255,255,0.85);
+    border-radius: var(--radius-pill);
+    font-family: inherit;
+    font-size: 12px; font-weight: 700;
+    color: var(--main-teal-text);
+    padding: 9px 14px;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    margin-right: 14px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+.font-toggle:hover { border-color: var(--main-teal); background: #fff; }
+html.large-text .font-toggle { background: var(--main-teal-deep); color: #fff; border-color: var(--main-teal-deep); }
+html.large-text body { zoom: 1.18; }
+.header__nav .font-toggle { display: none; }
+@media (max-width: 1023px) {
+    .header__inner > .font-toggle { display: none; }
+    .header__nav .font-toggle { display: block; width: 100%; margin: 8px 0 0; padding: 12px; font-size: 14px; }
+}
+@media (max-width: 1023px) {
+    .medical-list[style] { grid-template-columns: 1fr !important; }
+}

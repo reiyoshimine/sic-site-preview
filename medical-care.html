@@ -41,7 +41,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/style.css?v=10">
+<link rel="stylesheet" href="assets/css/style.css?v=12">
 </head>
 <body>
     <a class="skip-link" href="#main">本文へスキップ</a>
@@ -86,10 +86,13 @@
                     <li><a href="medical-care.html" class="header__nav-link header__nav-link--active" aria-current="page">診療のご案内</a></li>
                     <li><a href="doctors.html" class="header__nav-link">医師紹介</a></li>
                     <li><a href="faq.html" class="header__nav-link">よくある質問</a></li>
+                    <li><a href="blog/" class="header__nav-link">ほうもん日記</a></li>
                     <li><a href="index.html#access" class="header__nav-link">アクセス</a></li>
+                    <li><button type="button" class="font-toggle js-font-toggle" aria-pressed="false">文字サイズを大きくする</button></li>
                 </ul>
             </nav>
 
+            <button type="button" class="font-toggle js-font-toggle" aria-pressed="false">文字サイズ 大</button>
             <a href="contact.html" class="header__cta">お問い合わせ</a>
         </div>
     </header>
@@ -269,6 +272,46 @@
     </div>
 </section>
 
+<!-- Partners List Section -->
+<section class="section section--white" id="renkei">
+    <div class="section-header">
+        <p class="section-header__label">Network</p>
+        <h2 class="section-header__title">連携先の医療機関・事業所</h2>
+        <p class="section-header__text">病院・訪問看護・薬局と密に連携し、<br class="u-br-pc">入院や専門的な治療が必要なときもスムーズにつなぎます。</p>
+    </div>
+    <div class="medical-list" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="medical-list__category fade-in">
+            <h3 class="medical-list__title">連携医療機関（病院）</h3>
+            <ul class="medical-list__items">
+                <li>札幌医科大学病院</li>
+                <li>北海道循環器病院</li>
+                <li>勤医協中央病院</li>
+                <li>NTT東日本札幌病院</li>
+                <li>医療法人晴生会 晴生会さっぽろ病院</li>
+                <li>ほか</li>
+            </ul>
+        </div>
+        <div class="medical-list__category fade-in">
+            <h3 class="medical-list__title">訪問看護ステーション</h3>
+            <ul class="medical-list__items">
+                <li>訪問看護ステーション かなう</li>
+                <li>訪問看護ステーション シャイン</li>
+                <li>訪問看護ステーション 暖</li>
+                <li>ほか</li>
+            </ul>
+        </div>
+        <div class="medical-list__category fade-in">
+            <h3 class="medical-list__title">薬局（訪問薬剤）</h3>
+            <ul class="medical-list__items">
+                <li>在宅ケア薬局</li>
+                <li>ゆうせい薬局</li>
+                <li>ほか</li>
+            </ul>
+        </div>
+    </div>
+    <p style="text-align:center; margin-top:24px; font-size:12.5px; color:var(--text-sub);">※ 順不同・敬称略。上記以外の医療機関・事業所とも患者さんの状況に応じて連携します。</p>
+</section>
+
 <!-- Area Section -->
 <section class="section section--beige" id="area">
     <div class="section-header">
@@ -280,6 +323,9 @@
             札幌市中央区のクリニックを拠点に、<strong>札幌市内を中心とした訪問診療</strong>を行っています。中央区・豊平区・西区・南区など近隣エリアのほか、札幌市内やその近郊にお住まいの方もまずはご相談ください。ご自宅の場所・施設の所在地をお伺いし、訪問可能かどうかを個別にご案内いたします。
         </p>
     </div>
+    <p style="text-align:center; margin-top:36px;">
+        <a href="visit-flow.html" class="message__link">初めての方へ：診療当日の流れを見る <span>&rarr;</span></a>
+    </p>
 </section>
 
     </main>
@@ -355,6 +401,9 @@
                 <h4 class="footer__title">Medical Care</h4>
                 <ul class="footer__links">
                     <li><a href="medical-care.html">訪問診療について</a></li>
+                    <li><a href="visit-flow.html">診療当日の流れ</a></li>
+                    <li><a href="taiin-support.html">退院後の在宅療養</a></li>
+                    <li><a href="ninchisho-care.html">認知症でお困りの方へ</a></li>
                     <li><a href="index.html#partners">施設・連携機関の皆様へ</a></li>
                     <li><a href="medical-care.html#area">対応エリア</a></li>
                 </ul>
@@ -365,7 +414,7 @@
                     <li><a href="index.html#features">当院の特徴</a></li>
                     <li><a href="doctors.html">医師紹介</a></li>
                     <li><a href="faq.html">よくある質問</a></li>
-                    <li><a href="blog/">在宅医療コラム</a></li>
+                    <li><a href="blog/">ほうもん日記</a></li>
                 </ul>
             </div>
             <div>
