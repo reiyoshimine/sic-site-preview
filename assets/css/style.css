@@ -416,6 +416,10 @@ body::after {
     box-shadow: 0 0 0 6px white, 0 0 0 8px var(--main-a20), var(--shadow-soft);
     transition: transform 0.5s var(--ease-spring);
 }
+.feature-card__icon svg {
+    width: 56%; height: 56%;
+    display: block;
+}
 .feature-card__icon img {
     width: 82%; height: 82%;
     object-fit: contain;
