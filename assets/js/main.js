@@ -42,27 +42,3 @@ addEventListener('load', checkFadeIns);
 checkFadeIns();
 setInterval(checkFadeIns, 800);
 
-// 文字サイズ切替（選択を記憶）
-(function () {
-    var KEY = 'sic-font-large';
-    var root = document.documentElement;
-    function apply(on) {
-        root.classList.toggle('large-text', on);
-        document.querySelectorAll('.js-font-toggle').forEach(function (b) {
-            b.setAttribute('aria-pressed', on ? 'true' : 'false');
-            b.textContent = b.closest('.header__nav')
-                ? (on ? '文字サイズを標準に戻す' : '文字サイズを大きくする')
-                : (on ? '文字サイズ 標準' : '文字サイズ 大');
-        });
-    }
-    var saved = false;
-    try { saved = localStorage.getItem(KEY) === '1'; } catch (e) {}
-    apply(saved);
-    document.querySelectorAll('.js-font-toggle').forEach(function (b) {
-        b.addEventListener('click', function () {
-            var on = !root.classList.contains('large-text');
-            try { localStorage.setItem(KEY, on ? '1' : '0'); } catch (e) {}
-            apply(on);
-        });
-    });
-})();

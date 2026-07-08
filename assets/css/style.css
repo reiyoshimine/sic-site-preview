@@ -135,6 +135,7 @@ body::after {
     padding: 10px 16px; border-radius: var(--radius-pill);
     transition: all 0.35s var(--ease-out-expo);
     position: relative;
+    white-space: nowrap;
 }
 .header__nav-link::after {
     content: ''; position: absolute;
@@ -1365,31 +1366,20 @@ a:focus-visible, button:focus-visible {
     .visit-step__art { width: 84px; height: 84px; border-radius: 18px; }
 }
 
-/* --------------------------------------------------------------------------
-   文字サイズ切替
-   -------------------------------------------------------------------------- */
-.font-toggle {
-    border: 1px solid var(--main-a20);
-    background: rgba(255,255,255,0.85);
-    border-radius: var(--radius-pill);
-    font-family: inherit;
-    font-size: 12px; font-weight: 700;
-    color: var(--main-teal-text);
-    padding: 9px 14px;
-    cursor: pointer;
-    letter-spacing: 0.04em;
-    margin-right: 14px;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-}
-.font-toggle:hover { border-color: var(--main-teal); background: #fff; }
-html.large-text .font-toggle { background: var(--main-teal-deep); color: #fff; border-color: var(--main-teal-deep); }
-html.large-text body { zoom: 1.18; }
-.header__nav .font-toggle { display: none; }
-@media (max-width: 1023px) {
-    .header__inner > .font-toggle { display: none; }
-    .header__nav .font-toggle { display: block; width: 100%; margin: 8px 0 0; padding: 12px; font-size: 14px; }
-}
 @media (max-width: 1023px) {
     .medical-list[style] { grid-template-columns: 1fr !important; }
+}
+
+/* 中間幅でナビが窮屈になる場合の調整 */
+@media (min-width: 1024px) and (max-width: 1339px) {
+    .header { padding: 10px 18px; }
+    .header--scrolled { padding: 6px 18px; }
+    .header__inner { gap: 8px; }
+    .header__logo { gap: 8px; }
+    .header__logo-icon { width: 40px; height: 40px; }
+    .header__nav-list { gap: 0; }
+    .header__nav-link { padding: 9px 8px; font-size: 12.5px; }
+    .header__logo-text { font-size: 13.5px; white-space: nowrap; }
+    .header__logo-text small { font-size: 10px; }
+    .header__cta { padding: 10px 14px; font-size: 12.5px; }
 }
